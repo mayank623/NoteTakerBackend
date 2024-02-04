@@ -1,0 +1,96 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #254441;
+}
+fieldset{
+    border: 0px solid #331E38;
+    height: 150px;
+    width: 60%;
+    background-color: #F4E8C1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    opacity: 0.8;
+}
+.mainHead,.subHead{
+    color: aliceblue;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+.mainHead{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:xx-large;
+    margin-bottom: 0px;
+}
+.subHead{
+    margin-top: 0px;
+    font-family: "Brush Script MT";
+}   
+form{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    height: 50%;
+    width: 70%;
+    border-radius: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.inpp{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 15px;
+    width: 70%;
+    height: 70%;
+}
+#userWelc{
+    font-size: medium;
+    padding: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:antiquewhite;
+}
+#newNote{
+    border: 2px solid white;
+    padding: 10px;
+    width: 70%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.noteList{
+    width: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 8px;
+}
+.note{
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 4px;
+}
+summary{
+    background-color: white;
+    border-radius: 3px 3px 3px 3px;
+    padding: 5px;
+    margin: 3px 3px 2px 3px;
+    width: 1fr;
+}
+.detailsPara{
+    background-color: gainsboro;
+    border-radius: 3px 3px 3px 3px;
+    width: 1fr;
+    padding: 6px;
+}

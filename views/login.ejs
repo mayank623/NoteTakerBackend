@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <center>
+    <%- include('./header.ejs') %>
+    <fieldset>
+        <form id="loginForm" action="/login" method="post">
+            <input type="email" name="email" class="inpp" placeholder="Enter Email" value="<%= locals.email %>">
+            <div class="passw" style="width: 70%;">
+                <input type="password" name="password" placeholder="Enter Password" id="pwd" style="width: 90%;">
+                <img src="/open-eye.png" id="eye" style="width: 25px; height: 20px;"/>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+
+        <p style="color: red;"> <%= locals.message %></p>
+    </fieldset>
+</center>
+</body>
+</html>

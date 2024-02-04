@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <center>
+        <%- include('./header.ejs') %>
+        <p id="userWelc"> Hi <%= locals.name %> , Here are your Tasks. You can also add another task by entering it in the below textbox, Happy Noting :)</p>
+    
+        <form action="/newNote" method="post" id="newNote">
+            <input type="text" name="title" class="inpp" placeholder="Title">
+            <textarea rows="4" placeholder="Description" class="inpp" name="descr"></textarea>
+            <button type="submit" id="noteSubmit">Create Note</button>
+        </form>
+        <br><br><br>
+        <div class="noteList">
+           <% for(const item of theNotes){ %>
+                <details>
+                    <summary> <%= item.title %> </summary>
+                    <p class="detailsPara"> <%= item.descr %> </p>
+                </details>
+           <% } %>
+            </div>
+        <a href="/logout" id="logout"  style="color: white;">LOGOUT</a>
+    </center>
+    <!-- <script src="/js/notes.js"></script> -->
+</body>
+</html>
